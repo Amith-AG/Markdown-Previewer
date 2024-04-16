@@ -1,0 +1,38 @@
+.boxes-container {
+  max-width: 100%;
+  min-height: 100vh;
+  display: flex;
+  padding: 1.2rem;
+}
+
+#editor {
+  flex: 1;
+  min-height: 100vh;
+  margin: 0rem 0.25rem;
+  padding: 2rem;
+}
+
+#preview {
+  flex: 1;
+  min-height: 100vh;
+  max-width: 100%;
+  margin: 0rem 0.25rem;
+  padding: 1.2rem;
+  border: solid 2px;
+
+  overflow: auto;
+  background-color: yellow;
+}
+#preview img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 800px) {
+  .boxes-container {
+    flex-direction: column;
+  }
+  #preview {
+    margin-top: 1rem;
+  }
+}
